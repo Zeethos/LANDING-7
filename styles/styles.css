@@ -147,6 +147,11 @@ html {
     background-color: #ff2d2d;
 }
 
+.video__youtube {
+    width: 550px;
+    height: 356px;
+}
+
 .section {
     display: flex;
     flex-wrap: wrap;
@@ -339,11 +344,13 @@ html {
     color: #FF2D2D;
 }
 
-.products {
+.products__ul {
+    list-style: none;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 5px;
 }
 
 .product {
@@ -352,11 +359,18 @@ html {
     height: 292px;
     margin-bottom: 18px;
     object-fit: cover;
+    transition: transform 0.25s;
 }
 
-.product:hover {
+.products__li {
+    width: 298px;
+    height: 292px;
+    overflow: hidden;
+}
+
+.products__li:hover img {
+    transform: scale(1.2);
     cursor: pointer;
-    max-width: 320px;
 }
 
 /* Team */
@@ -459,6 +473,12 @@ html {
     font-weight: 600;
 }
 
+.team__ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
 .team__selected-link {
     color: #000000;
     font-size: 18px;
@@ -472,12 +492,19 @@ html {
     text-decoration: underline;
 }
 
-.members {
+.members__ul {
+    list-style: none;
     display: flex;
     align-items: flex-end;
     flex-wrap: wrap;
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+    padding: 0;
+    gap: 20px;
+}
+
+.members__li {
+    cursor: pointer;
 }
 
 .member {
@@ -709,7 +736,6 @@ html {
     resize: none;
     font-size: 16px;
     width: 100%;
-    max-width: 734px;
     height: 252px;
     box-sizing: border-box;
     margin-bottom: 44px;
@@ -730,7 +756,6 @@ html {
     justify-content: center;
     align-items: center;
     width: 100%;
-    max-width: 734px;
     height: 74px;
     color: #FFFFFF;
     font-size: 18px;

@@ -1,17 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LANDING</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./styles/styles.css" />
+      rel="stylesheet">
+    <link rel="stylesheet" href="./styles/styles.css">
   </head>
   <body class="page">
     <div class="page__header page__header-grey">
@@ -46,21 +45,16 @@
               eiusmod tempor incididunt ut labore et. ectetur adig ipis cing
               elit, sed do eiusmod tempor incididunt.
             </p>
-            <button class="intro__btn action-btn">
+            <button type="button" class="intro__btn action-btn">
               Contact Us
             </button>
           </div>
-          <a class="intro__video">
-            <iframe
-              width="550"
-              height="356"
-              src="https://www.youtube.com/embed/8_DliqEjZkY?list=TLPQMTMwMzIwMjNeVmDqMZ6tww"
-              title="Пвп Таурен Фури Вар Храм Котмогу ПандаВов"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
-          </a>
+          <iframe class="video__youtube"
+            src="https://www.youtube.com/embed/H2GCkRF9eko"
+            title="React &amp; Node.js ИНТЕРНЕТ МАГАЗИН С НУЛЯ. PERN stack PostgreSQL + express + React js + node.js"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
         </section>
       </div>
       <section class="section services">
@@ -74,7 +68,9 @@
             amet, consectetur adipis cing elit, ed doi eiusmod tempor incididunt
             ut labore et.
           </p>
-          <button class="services__btn action-btn">Learn More</button>
+          <button type="button" class="services__btn action-btn">
+            Learn More
+          </button>
         </div>
         <div class="services__blocks">
           <section class="service">
@@ -139,48 +135,56 @@
             <a class="products__link" href="#">mock-up</a>
           </li>
         </ul>
-        <div class="products">
-          <img
-            class="product"
-            src="./images/work-1.jpg"
-            alt="Скриншот из макета"
-          />
-          <img
-            class="product"
-            src="./images/work-2.jpg"
-            alt="Скриншот из макета"
-          />
-          <img
-            class="product"
-            src="./images/work-3.jpg"
-            alt="Скриншот из макета"
-          />
-          <img
-            class="product"
-            src="./images/work-4.jpg"
-            alt="Скриншот из макета"
-          />
-          <img
-            class="product"
-            src="./images/work-5.jpg"
-            alt="Скриншот из макета"
-          />
-          <img
-            class="product"
-            src="./images/work-6.jpg"
-            alt="Скриншот из макета"
-          />
-          <img
-            class="product"
-            src="./images/work-7.jpg"
-            alt="Скриншот из макета"
-          />
-          <img
-            class="product"
-            src="./images/work-8.jpg"
-            alt="Скриншот из макета"
-          />
-        </div>
+        <ul class="products__ul">
+          <li class="products__li">
+            <img
+              class="product"
+              src="./images/work-1.jpg"
+              alt="Картинка номер 1">
+          </li>
+          <li class="products__li">
+            <img
+              class="product"
+              src="./images/work-2.jpg"
+              alt="Картинка номер 2">
+          </li>
+          <li class="products__li">
+            <img
+              class="product"
+              src="./images/work-3.jpg"
+              alt="Картинка номер 3">
+          </li>
+          <li class="products__li">
+            <img
+              class="product"
+              src="./images/work-4.jpg"
+              alt="Картинка номер 4">
+          </li>
+          <li class="products__li">
+            <img
+              class="product"
+              src="./images/work-5.jpg"
+              alt="Картинка номер 5">
+          </li>
+          <li class="products__li">
+            <img
+              class="product"
+              src="./images/work-6.jpg"
+              alt="Картинка номер 6">
+          </li>
+          <li class="products__li">
+            <img
+              class="product"
+              src="./images/work-7.jpg"
+              alt="Картинка номер 7">
+          </li>
+          <li class="products__li">
+            <img
+              class="product"
+              src="./images/work-8.jpg"
+              alt="Картинка номер 8">
+          </li>
+        </ul>
       </section>
       <section class="section team">
         <div class="team__header">
@@ -197,8 +201,7 @@
           <img
             class="team__selected_photo"
             src="./images/main-photo.avif"
-            alt="Фото сотрудника"
-          />
+            alt="Фото сотрудника">
           <div class="team__main-content">
             <div class="team__selected-info">
               <span class="team__selected-name">mark waugh</span>
@@ -207,45 +210,61 @@
                 dooing eiusmod tempor incididut labore Ui / Ux , print template.
               </p>
               <div class="team__selected-links">
-                <a class="team__selected-link" href="#">Facebook</a>
-                <a class="team__selected-link" href="#">Dribble</a>
-                <a class="team__selected-link" href="#">Behance</a>
-                <a class="team__selected-link" href="#">Twiter</a>
+                <ul class="team__ul">
+                  <li class="team__li">
+                    <a class="team__selected-link" href="#">Facebook</a>
+                  </li>
+                  <li class="team__li">
+                    <a class="team__selected-link" href="#">Dribble</a>
+                  </li>
+                  <li class="team__li">
+                    <a class="team__selected-link" href="#">Behance</a>
+                  </li>
+                  <li class="team__li">
+                    <a class="team__selected-link" href="#">Twiter</a>
+                  </li>
+                </ul>
               </div>
             </div>
             <section class="members">
-              <div class="member">
-                <h3 class="member__name">sokina jue</h3>
-                <img
-                  class="member__photo"
-                  src="./images/photo-1.avif"
-                  alt="Фото сотрудника"
-                />
-              </div>
-              <div class="member">
-                <h3 class="member__name">sokina jue</h3>
-                <img
-                  class="member__photo"
-                  src="./images/photo-2.avif"
-                  alt="Фото сотрудника"
-                />
-              </div>
-              <div class="member">
-                <h3 class="member__name">sokina jue</h3>
-                <img
-                  class="member__photo"
-                  src="./images/photo-3.avif"
-                  alt="Фото сотрудника"
-                />
-              </div>
-              <div class="member">
-                <h3 class="member__name">sokina jue</h3>
-                <img
-                  class="member__photo"
-                  src="./images/photo-4.avif"
-                  alt="Фото сотрудника"
-                />
-              </div>
+              <ul class="members__ul">
+                <li class="members__li">
+                  <div class="member">
+                    <h3 class="member__name">sokina jue</h3>
+                    <img
+                      class="member__photo"
+                      src="./images/photo-1.avif"
+                      alt="Фото сотрудника номер 1">
+                  </div>
+                </li>
+                <li class="members__li">
+                  <div class="member">
+                    <h3 class="member__name">sokina jue</h3>
+                    <img
+                      class="member__photo"
+                      src="./images/photo-2.avif"
+                      alt="Фото сотрудника номер 2">
+                  </div>
+                </li>
+                <li class="members__li">
+                  <div class="member">
+                    <h3 class="member__name">sokina jue</h3>
+                    <img
+                      class="member__photo"
+                      src="./images/photo-3.avif"
+                      alt="Фото сотрудника номер 3">
+                  </div>
+                </li>
+                <li class="members__li">
+                  <div class="member">
+                    <h3 class="member__name">sokina jue</h3>
+                    <img
+                      class="member__photo"
+                      src="./images/photo-4.avif"
+                      alt="Фото сотрудника номер 4">
+                  </div>
+                </li>
+              </ul>
             </section>
           </div>
         </div>
@@ -260,14 +279,13 @@
             eiusmod.
           </p>
         </div>
-        <form class="subscribe__form" action="" method="POST">
+        <form class="subscribe__form" action="URL" method="POST">
           <input
             class="subscribe__input"
             type="email"
             name="email"
             placeholder="Email Address..."
-            required
-          />
+            required>
           <button class="subscribe__btn" type="submit">subscribe</button>
         </form>
       </section>
@@ -283,39 +301,37 @@
             </p>
             <div class="feedback__red-line"></div>
           </div>
-          <section class="feedback__body section">
-            <form class="feedback__form">
+          <div class="feedback__body section">
+            <form class="feedback__form" action="URL">
               <input
                 class="feedback__input feedback__input-text"
                 type="text"
                 name="name"
                 placeholder="Name"
-                required
-              />
+                required>
               <input
                 class="feedback__input feedback__input-email"
                 type="email"
                 name="email"
                 placeholder="Your Mail"
-                required
-              />
+                required>
               <textarea
                 class="feedback__message"
                 name="message"
-                cols="30"
-                rows="5"
                 placeholder="Type your message"
               ></textarea>
               <button class="feedback__btn" type="submit">Send message</button>
             </form>
-          </section>
+        </div>
         </section>
         <section class="contacts">
           <h2 class="contacts__heading">contact info</h2>
           <p class="contacts__adress-text">
             Jalalabad 24 / A, Ambaarkhana, Sylhet,
           </p>
-          <p class="contacts__adress-text-two contacts__adress-text">Bangladesh</p>
+          <p class="contacts__adress-text-two contacts__adress-text">
+            Bangladesh
+          </p>
           <p class="contacts__adress-text">redwan@deviserweb.com</p>
           <p class="contacts__adress-text">(+88) 017 617 46373</p>
         </section>
